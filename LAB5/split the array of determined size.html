@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myinputarr = [];
+        var size = prompt("Enter the size of the array");
+        
+        for(var a=0; a<size; a++) 
+        {
+            myinputarr[a] = prompt('Enter array Element ' + (a+1));
+        }
+        document.write(myinputarr);
+        
+        //user eneter array
+        console.log(myinputarr);
+        alert(myinputarr)
+        var a = prompt("enter the size to slice");
+        let chunk1 = myinputarr.splice(0,a);
+        // let chunk2 = myinputarr.splice(a,size);
+        alert(chunk1)
+        alert(myinputarr)
+        // let chunk = arrTest.splice(0,2)
+        // console.log(chunk) // [2, 3]
+        // console.log(arrTest) // [1, 4]
+        // alert(arrTest)
+    </script>
+</body>
+</html>

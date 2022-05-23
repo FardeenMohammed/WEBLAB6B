@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var years=[];
+        var count=0;
+        var size = prompt("enter the number of elements");
+        document.write("The Leap year is/are ")
+        for(var i=0; i<size ; i++){
+            years[i]=prompt("Enter element"+(i+1));
+            if(years[i]%4==0 && years[i]%100!=0 || years[i]%400==0){
+                document.write(years[i]+" ")
+                count=count+1;
+            }
+        }
+        if(count==0){
+            document.write("There are no leap years in the range")
+        }
+    </script>
+</body>
+</html>
